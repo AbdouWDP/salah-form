@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Noto+Naskh+Arabic:wght@400..700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Cairo", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+@media only screen and (max-width: 768px) {
+  .my-form {
+    width: 95% !important;
+  }
+  .my-form .container {
+    width: 95% !important;
+  }
+}
