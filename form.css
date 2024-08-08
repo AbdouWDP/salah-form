@@ -5,7 +5,10 @@
   margin: 0;
   box-sizing: border-box;
 }
-
+@font-face {
+  font-family: "arabic";
+  src: url("./TheYearofTheCamel-ExtraBold.otf");
+}
 body {
   font-family: "Cairo", sans-serif;
   display: flex;
@@ -18,7 +21,18 @@ body {
   .my-form {
     width: 95% !important;
   }
-  .my-form .container {
-    width: 95% !important;
+  .selections div {
+    width: 100% !important;
   }
+}
+
+input[type="number"] {
+  appearance: textfield;
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
+  -o-appearance: textfield;
+  -ms-appearance: textfield;
+}
+.submit-form {
+  background: linear-gradient(90deg, #41b3b0ff 0%, #9013feff 100%);
 }
