@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="form.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <section class="my-form w-1/2 h-fit">
+      <form
+        dir="rtl"
+        id="checkout-form"
+        class="flex flex-col gap-1 border-2 border-black rounded-lg p-4"
+      >
+        <div class="w-full text-center font-bold">
+          <h2>للطلب املأ معلوماتك اسفله</h2>
+        </div>
+        <div class="full-name">
+          <label for="fullName" class="font-semibold text-sm"
+            >الاسم الكامل</label
+          >
+          <input
+            type="text"
+            name="fullName"
+            placeholder="Nom et Prénom"
+            class="w-full h-12 border border-gray-200 rounded-lg mt-1 px-2 text-sm outline-none duration-150 focus:border-gray-500 focus:shadow-sm"
+          />
+        </div>
+        <div class="phone-number">
+          <label for="phone" class="font-semibold text-sm">رقم الهاتف</label>
+          <input
+            type="text"
+            name="phone"
+            placeholder="Numéro de téléphone"
+            class="w-full h-12 border border-gray-200 rounded-lg mt-1 px-2 text-sm outline-none duration-150 focus:border-gray-500 focus:shadow-sm"
+          />
+        </div>
+        <div class="selections flex justify-between max-md:flex-col">
+          <div class="select-wilaya" style="width: 48%">
+            <label for="wilaya" class="font-semibold text-sm">الولاية</label>
+            <select
+              name="wilaya"
+              class="w-full h-12 border border-gray-200 bg-white rounded-lg mt-1 px-2 text-sm outline-none duration-150 focus:border-gray-500 focus:shadow-sm"
+            >
+              <option value="Wilaya">Wilaya</option>
+            </select>
+          </div>
+          <div class="select-commune" style="width: 48%">
+            <label for="commune" class="font-semibold text-sm">البلدية</label>
+            <select
+              name="commune"
+              class="w-full h-12 border border-gray-200 bg-white rounded-lg mt-1 px-2 text-sm outline-none duration-150 focus:border-gray-500 focus:shadow-sm"
+            >
+              <option value="Commune">Commune</option>
+            </select>
+          </div>
+        </div>
+        <div
+          class="quantity w-3/5 h-12 border border-gray-200 rounded-lg flex m-auto"
+        >
+          <button type="button" class="add w-1/5 h-full">+</button>
+          <input
+            type="number"
+            name="quantity"
+            value="1"
+            class="w-3/5 h-full border-x border-gray-200 text-center outline-none focus:border-gray-500 focus:shadow-sm"
+          />
+          <button type="button" class="sub w-1/5 h-full">-</button>
+        </div>
+        <div class="order-summary w-full h-fit py-2 rounded-md bg-gray-100">
+          <div style="width: 96%" class="m-auto">
+            <div class="text-center font-semibold cursor-default">
+              <h1>ملخص الطلبية</h1>
+            </div>
+            <div class="price flex justify-between">
+              <p>السعر</p>
+              <p dir="ltr">1000 DA</p>
+            </div>
+            <div class="delivery-price flex justify-between mb-1">
+              <p>سعر التوصيل</p>
+              <p dir="ltr">500 DA</p>
+            </div>
+            <div
+              class="total-price flex justify-between border-t border-black mt-1 font-semibold text-lg"
+            >
+              <p>السعر الاجمالي</p>
+              <p dir="ltr">1500 DA</p>
+            </div>
+          </div>
+        </div>
+        <button
+          type="submit"
+          class="submit-form w-full h-12 rounded-lg text-white font-semibold"
+        >
+          تأكيد الطلبية
+        </button>
+      </form>
+    </section>
+    <script src="form.js"></script>
+  </body>
+</html>
