@@ -6,8 +6,14 @@
     <title>Form</title>
     <link rel="stylesheet" href="form.css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://kit.fontawesome.com/38bd4d5857.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
+    <!-- My Form =================================== -->
+
     <section class="my-form w-1/2 h-fit">
       <form
         dir="rtl"
@@ -98,6 +104,61 @@
         </button>
       </form>
     </section>
+
+    <!-- Product Card ========================== -->
+    <div
+      class="product-card w-72 py-4 rounded-xl border flex justify-center items-center"
+      style="border-color: #ececec"
+    >
+      <div class="pc-container" style="width: 95%; height: 95%">
+        <div
+          class="group product-card-image w-full h-3/5 relative cursor-pointer overflow-hidden"
+        >
+          <img
+            src="https://bluetilesc.com/cdn/shop/products/adidassuperstaradvflatwhitecoreblackflatwhite_1000x1000.jpg?v=1643920127"
+            alt=""
+            class="w-full h-full object-contain duration-500 ease-in-out hover:scale-110"
+          />
+          <!-- <div
+            class="product-hover-options absolute top-1/2 left-1/2 hidden group-hover:block"
+            style="transform: translate(-50%, -50%)"
+          >
+            <button class="wishlist">
+              <span>
+                <i class="fa-regular fa-heart"></i>
+              </span>
+            </button>
+            <button class="compare">
+              <span>
+                <i class="fa-solid fa-shuffle"></i>
+              </span>
+            </button>
+            <button class="quick-view">
+              <span>
+                <i class="fa-regular fa-eye"></i>
+              </span>
+            </button>
+          </div> -->
+        </div>
+        <div class="product-card-informations w-full h-2/5">
+          <div class="pci-top text-blue font-semibold text-xl line-clamp-2">
+            <p class="title">Product Title Product Title Product Title</p>
+          </div>
+          <div class="pci-bottom">
+            <p class="price text-green font-bold text-lg">$52.50</p>
+            <button
+              class="add-to-cart w-full py-2.5 bg-green-hover text-green duration-200 font-bold rounded hover:text-white"
+            >
+              <span>
+                <i class="fa-solid fa-cart-shopping"></i>
+                tt
+              </span>
+              <span>اشتري الان</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="form.js"></script>
   </body>
 </html>
