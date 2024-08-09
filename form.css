@@ -26,6 +26,9 @@ body {
   .selections div {
     width: 100% !important;
   }
+  body {
+    flex-direction: column !important;
+  }
 }
 
 input[type="number"] {
